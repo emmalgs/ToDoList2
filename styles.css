@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20%, 70%, 10%;
+    gap: 20px;
+    font-family: 'Unbounded', 'Helvetica', sans-serif;
+}
+
+header {
+    grid-area: 1 / 2 / 2 / span 3;
+    border-bottom: 2px solid black;
+    margin: 2em;
+    height: 15vh;
+}
+
+.main {
+    grid-area: 2/2/3/span 3;
+}
+
+.projects {
+    grid-area: 1/1/4/2;
+    border-right: 2px solid black;
+    height: 80vh;
+}
+
+.projects > h2 {
+    margin: 2em;
+}
